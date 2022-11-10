@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not found</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav .Title{
+        margin-left:140px; padding: 20px;
+     }
+    .Left{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .Left img{
+        width: 75%;
+    } 
+    .Right{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+    }
+    .Right .Title{
+        width: 50%;
+    }
+    .Right .Title h1{
+        font-size: 34px;
+        color: rgb(44 34 23 / 95%);
+    }
+    .Right .decription{
+        width: 50%;
+    }
+    .Right .decription p{
+        font-size: 20px;
+    }
+    .Right .buttons button{
+        border:1px solid gray;
+        background-color: rgb(41, 39, 39);
+        color: white;
+        padding: 15px;
+        cursor: pointer;
+    }
+    @media(max-width:425px){
+        section{
+            flex-direction: column;
+            margin-left: 5px;
+        }
+        .Left{
+            width: 100%;
+        }
+        nav .Title{
+            margin-left: 5px;
+        }
+        .Right{
+            width: 100%;
+        }
+        .Right .Title{
+            width: 100%;
+        }
+         .Right .decription{
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <div  class="Title">404 Not Found</div>
+        </nav>
+    </header>
+    <section style="display:flex; margin-top: 20px; justify-content: center;">
+        <div class="Left">
+            <img src="f9c2fa00-20e0-11eb-96d0-be2c845564c5.png" alt="">
+        </div>
+        <div class="Right">
+            <div  class="Title">
+                <h1>I have bad news for you</h1>
+            </div>
+            <div style="margin-top: 30px ;" class="decription">
+                <p>The page you are looking for might be removed or is temporarily unaviable</p>
+            </div>
+            <div style="margin-top: 30px ;" class="buttons">
+                <button  type="button">Back to Home Page</button>
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+</html>
